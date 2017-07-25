@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+<title>Booking Calculator</title>
+
+	<!--character set-->
+	<meta charset="utf-8">
+
+	<!--bootstrap set-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+
+<!--Nav-->
+
+		<div class="row jumbotron">
+			<div class="col-xs-12">
+				
+					<div id="logo" class="col-xs-2">
+						LOGO HERE
+					</div>
+					<div class="col-xs-2"></div>
+					<div class="col-xs-2">Instructions</div>
+					<div class="col-xs-2">Calculator</div>
+					<div class="col-xs-2">Age Calcu</div>
+					<div class="col-xs-2">Tracker</div>
+				
+			</div>
+		</div>
+
+<!--body-->		
+
+		<div class="row jumbotron">
+			<div class="col-xs-12">
+				<div class="col-xs-5 well">
+<!--Basic Info form starts here-->
+					<h2>Basic Information</h2><br>
+						<form>
+							<div class="form-group">
+								<label for="email">Booker's Name:</label>
+								<input type="email" class="form-control" id="email" placeholder="Input booker's name">	
+							</div>
+							<div class="form-group">
+								<label for="date-booked">Date Booked:</label>
+								<input type="date" class="form-control" id="date-booked" placeholder="Input date here.">
+							</div>
+							<div class="form-group">
+								<label for="arrival-date">Arrival Date: </label>
+								<input type="date" class="form-control" id="arrival-date" placeholder="Input arrival date here.">
+							</div>
+							<div>
+								<label for="arrival-date">Departure Date: </label>
+								<input type="date" class="form-control" id="departure-date" placeholder="Input departure date here.">
+							</div>
+							<br>
+							<div class="form-group">
+								<label for="unit">Unit: </label><i> (hold shift to select more than one)</i> 
+								<select multiple class="form-control" id="unit" placeholder="Select unit.">
+									<option>Myn A 510</option>
+									<option>Jac B 204</option>
+									<option>Myn A 514</option>
+									<option>Jac B 517</option>
+									<option>Jac B 315</option>
+									<option>Myna B 401</option>
+									<option>Jac A 611</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="contact">Contact No.: </label>
+								<input type="tel" class="form-control" id="contact" placeholder="Input contact number of guest here.">
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address: </label>
+								<input type="email" class="form-control" id="email" placeholder="e.g iampogi@jbvtravelandtours.com">		
+						</form>
+<!--Form ends here-->	
+				</div>
+			</div>
+
+		<div class="col-xs-1"></div>
+<!--Output starts here-->
+			<div class="col-xs-6 well">
+				<h2>Check Output</h2><br>
+				<div class="col-xs-4">
+					<span>Booker's name: </span><br><br>
+					<span>Date Booked: </span><br><br>
+					<span>Arrival: </span><br><br>
+					<span>Unit/s:</span><br><br>
+					<span>No. of Nights:</span><br><br>
+					<span>Contact info: </span><br><br>
+					<span>Email: </span><br><br>
+
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-4">
+					<span>No. of Guests: </span><br><br>
+					<span>Room Rate: </span><br><br>
+					<span>Deposited: </span><br><br>
+					<span>Balance: </span><br><br>
+					<span>Entrance Fee: </span><br><br>
+					<span>Room Rate: </span><br><br>
+					<span>Total Expenses: </span><br><br>
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+			<div class="col-xs-6 well">
+				<h2>Finance</h2>
+				<form>
+					<div class="form-group">
+						<label for="room-rate">Room rate: </label>
+						<input type="email" class="form-control" id="room-rate" placeholder="PHP *****.**">	
+					</div>
+					<div class="form-group">
+						<label for="deposit">Deposited Rate: </label>
+						<input type="email" class="form-control" id="deposited" placeholder="PHP *****.**">
+					</div>
+				</form>
+			</div>
+			<div class="col-xs-1"></div>
+			<div class="col-xs-6 well">
+				<h2>Guest Info</h2>
+				<form>
+					<div class="form-group">
+						<label for="guest">Guest List: </label>
+						<textarea type="textarea" class="form-control id="guest" placeholder="e.g John Zapido, 18...separate each entry with a comma (,)"></textarea>
+					</div>
+				</form>	
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
